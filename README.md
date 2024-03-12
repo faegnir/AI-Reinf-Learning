@@ -8,7 +8,8 @@ This project focuses on implementing an AI that learns the optimal strategy for 
 ### Implementation Details
 - **State Representation:** A state in Nim is represented by the current size of each pile. For instance, the state [1, 1, 3, 5] signifies 1 object in pile 0, 1 object in pile 1, 3 objects in pile 2, and 5 objects in pile 3.
 - **Action Representation:** An action is a pair of integers (i, j), indicating the action of taking j objects from pile i.
-- **Q-learning Formula:** The Q-values are updated using the formula: 
+- **Q-learning Formula:** The Q-values are updated using the formula:
+ 
 ```Q(s, a) <- Q(s, a) + alpha * (new value estimate - old value estimate)```
 
 Here, alpha is the learning rate, and the new value estimate considers the reward for the current action and the estimate of future rewards.
